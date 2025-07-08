@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier,AdaBoostClassifier
 
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classification_report
 st.title('Breast Cancer')
-df=pd.read_csv(r"C:\Users\ALMot7da\Downloads\breast-cancer (1).csv")
+df=pd.read_csv(r'C:\Users\ALMot7da\Downloads\breastcancer.csv')
 encoder=LabelEncoder()
 df['diagnosis']=encoder.fit_transform(df['diagnosis'])
 
